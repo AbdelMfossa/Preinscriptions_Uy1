@@ -1,0 +1,35 @@
+<div class="col-md-2 zozo f1-steps">
+    <div class="f1-step {% ifequal titre "civilité" %}active{% endifequal %}">
+        <div class="f1-step-icon"><i class="fa fa-tree"></i></div>
+        <p>Etat civil</p>
+    </div>
+    <div class="f1-step {% ifequal titre "filiation" %}active{% endifequal %}">
+        <div class="f1-step-icon"><i class="fa fa-user"></i></div>
+        <p>Informations de filiation</p>
+    </div>
+    <div class="f1-step {% ifequal titre "faculté" %}active{% endifequal %}">
+        <div class="f1-step-icon"><i class="fa fa-university"></i></div>
+        <p>Faculté et études souhaitées</p>
+    </div>
+    <div class="f1-step {% ifequal titre "diplomes" %}active{% endifequal %}">
+        <div class="f1-step-icon"><i class="fa fa-graduation-cap"></i></div>
+        <p>Diplômes présentés</p>
+    </div>
+    <div class="f1-step {% ifequal titre "sport" %}active{% endifequal %}">
+        <div class="f1-step-icon"><i class="fa fa-futbol-o"></i></div>
+        <p>Informations sportives</p>
+    </div>
+    <div class="f1-step {% ifequal titre "autres" %}active{% endifequal %}">
+        <div class="f1-step-icon"><i class="fa fa-twitter"></i></div>
+        <p>Autres</p>
+    </div>
+</div>
+<style>
+  display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
+</style>

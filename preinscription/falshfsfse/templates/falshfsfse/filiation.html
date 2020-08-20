@@ -1,0 +1,18 @@
+{% extends 'falshfsfse/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    {% with titre="filiation"%}
+        {% include 'falshfsfse/menuetape.html' %}
+    {% endwith %}
+<div class="col-md-10 ">
+    <form id='filiation_form' action="" method="post" class='f1 col-md-6'>
+        {% csrf_token %}
+        
+        {{ filiation_form| crispy }}
+        
+        <input type="submit" value="Suivant">   
+        <!-- {% include 'falshfsfse/boutonsuivant.html' %}  -->
+    </form>
+</div>
+{% endblock content %}
